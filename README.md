@@ -1,2 +1,2 @@
 # Site-Noticias
- Repositório
+ Repositório de um site de notícias criado por mim.
