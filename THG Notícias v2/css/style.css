@@ -316,12 +316,8 @@ header {
 .mais-noticias {
     position: absolute;
     left: 66.6%;
-    outline: none;
+    border-bottom: 2px solid #004174;
     color: #004174;
-    background-color: #004174;
-    color: #fff;
-    border-radius: .5rem;
-    padding: 0rem .2rem 0rem.2rem;
 }
 .img-noticia-secundaria1 img, .img-noticia-secundaria2 img {
     width: 35%;
@@ -392,7 +388,8 @@ header {
     grid-area: n5;
     width: 13rem;
     position: initial;
-    color: #ffffff;
+    border-bottom: 2px solid #004174;
+    color: #004174;
 }
 .img-noticia-secundaria1 h2, .img-noticia-secundaria2 h2 {
     font-size: 1rem;
