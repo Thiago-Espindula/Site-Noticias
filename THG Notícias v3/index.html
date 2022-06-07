@@ -6,101 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>pagina inicial</title>
 </head>
 <body>
     <!-- CONTEÚDO DO CABEÇALHO -->
     <header id="header">
-        <div class="menu-mobile" id="menu-mobile">
-            <div class="linha"></div>
-            <div class="linha"></div>
-            <div class="linha"></div>
-        </div>
         <div class="cabecalho">
             <div class="logo">
                 <img src="imagens/logo-th.png" alt="logo do site">
             </div>
-            <div class="menu" id="menu">
+            <div class="menu">
                 <nav>
-                    <ul>
+                    <ul id="menu-ul">
                         <li><a href="#">Início</a></li>
                         <li><a href="#">Curiosidades</a></li>
                         <li><a href="#">Imagens</a></li>
                         <li><a href="#">Tecnologia</a></li>
                         <li><a href="#">Contato</a></li>
-                        <li><a href="#">Assinatura</a></li>
+                        <li class="assinatura"><a href="#"><span>Assinatura</span></a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="pesquisa" id="pesquisa">
-                <input type="text" placeholder=" Digite algo...">
-                <span class="material-icons-outlined">search</span>     
+            <div class="pesquisa">
+                <input id="input" type="text" placeholder=" Digite algo...">
+                <span class="material-icons-outlined lupa">search</span>     
+            </div>
+            <div class="menu-mobile">
+                <div class="linha"></div>
+                <div class="linha"></div>
+                <div class="linha"></div>
             </div> 
         </div>
     </header>
-
     <!-- CONTEÚDO PRINCIPAL -->
     <main>
+        <div class="ultimas-noticias">
+            <h2>Últimas Noticias:</h2>
+            <p>Lorem ipsum, dolor sit amet a noite. obcaecati!</p>
+        </div>
         <div class="container">
-            <div class="ultimas-noticias">
-                <h2>Últimas Noticias:</h2>
-                <p>Lorem ipsum, dolor sit amet a noite. obcaecati!</p>
-            </div>
-            <div class="img-n-principal">
+            <div class="item-primario" id="img1">
                 <img src="imagens/biden eviara.jpg" alt="">
                 <h1>Baiden diohew ihjde iopejhd oihjdew oihjdew ohwde politica!</h1>
             </div>
-            <div class="itens">
-                <div class="img-noticias item" class="img1">
+            <div class="container-primario">
+                <div class="item-primario" id="img2">
                     <img src="imagens/img1.webp" alt="">
                     <h2>Lorem ipsum dolor sit amet, elit. Quo nam fuga!</h2>
                 </div>
-                <div class="img-noticias item" class="img2">
+                <div class="item-primario" id="img3">
                     <img src="imagens/im2.webp" alt="">
                     <h2>Lorem ipsum dolor sit amet, elit. Quo nam fuga!</h2>
                 </div>
-                <div class="img-noticias item" class="img3">
+                <div class="item-primario" id="img4">
                     <img src="imagens/nubank.jpg" alt="">
                     <h2>Lorem ipsum dolor sit amet, elit. Quo nam fuga!</h2>
                 </div>
             </div>
         </div>
     </main>
-
     <!-- CONTEÚDO SECUNDÁRIO -->
-    <section>
-        <div class="container-secundario"> 
-            <div class="img-noticia-secundaria1">
+    <section class="container-secundario">
+        <div class="container-secundario-esq"> 
+            <div class="item-secundario-esq">
                 <img src="imagens/esqueleto portugal.jpg" alt="">
                 <h2>Lorem ipsum dolor sit amet, elit. Quo nam fuga!</h2>
             </div>
-            <div class="img-noticia-secundaria2">
+            <div class="item-secundario-esq">
                 <img src="imagens/jogos arcade2.jpg" alt="">
                 <h2>Lorem ipsum dolor sit amet, elit. Quo nam fuga!</h2>
             </div>
-            <div class="mais-noticias">
-                <h2>Mais Noticias</h2>
-            </div>         
-            <div class="img-noticia-secundaria3">
+        </div>
+        <div class="container-secundario-dir">
+            <h3>Mais Noticias</h3>       
+            <div class="item-secundario-dir">
                 <h2>Lorem ipsum dolor sit amet, elit. Quo nam fuga!</h2>
                 <p>Política</p>
             </div>            
-            <div class="img-noticia-secundaria4">
+            <div class="item-secundario-dir">
                 <h2>Lorem ipsum dolor sit amet, elit. Quo nam fuga!</h2>
                 <p>Comédia</p>
             </div>
-        </div>
+        </div>    
     </section>
-
+    <!--Botão para ir ao topo da pag.-->
     <div class="topo">
-        <a href="#header">Topo</a>
+        <a href="#header">
+            <span class="material-symbols-outlined">keyboard_double_arrow_up</span>
+        </a>
     </div>
-    
     <footer>
         <div class="rodape">
             <p>Copyright &copy; 2022 THG Notícias - Todos os direitos reservados</p>
         </div>
     </footer>
+    <script src="js/javaScript.js"></script>
 </body>
-<script src="js/javaScript.js"></script>
 </html>
