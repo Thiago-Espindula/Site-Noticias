@@ -1,7 +1,8 @@
 //Menu Mobile
-const menuMobile = document.querySelector('.menu-mobile');
-menuMobile.addEventListener('click', function(){
-    const menu = document.querySelector('.menu');
-    menu.classList.toggle('alternar-menu');
-    menuMobile.classList.toggle('alternar-menuMobile');
-}); 
+let menuMobile = document.getElementById('menu-mobile');
+menuMobile.addEventListener('click', alternar);
+
+function alternar() {    
+    let menu = document.getElementById('menu');
+    menu.classList.toggle('alternar');
+}
